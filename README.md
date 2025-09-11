@@ -10,6 +10,8 @@ LLM Chat API on Cloudflare RAG on R2 , with Terraform deployment
 5. Add your Dev site name ( configured in Cloudflare ) in terraform.tfvars under workers_dev_subdomain variable.
 6. RUN "terraform init" - to initialize , then "terraform plan" - to see what is in plan to create , then "terraform apply" to setup and in response you will receive an API endpoint.
 
+![Binding Screenshot](binding.png) 
+
 ## How to generate RAG 
 You can convert your contextual files ( PDF/ Doc / Texts ) into embaddings as RAG data in JSON for example using https://github.com/satyamsoni/mini-rag-pdf2json or your own script.
 Upload output JSON file to R2 created by terraform script.
